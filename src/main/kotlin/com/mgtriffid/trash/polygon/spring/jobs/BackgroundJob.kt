@@ -9,5 +9,6 @@ class BackgroundJob {
 
     private val log = LoggerFactory.getLogger(javaClass)
 
+    @Scheduled(fixedDelay = 10000)
     fun someBackgroundJob() = log.info("I AM WORKING")
 }
